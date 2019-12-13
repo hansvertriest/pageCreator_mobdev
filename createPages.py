@@ -1,6 +1,6 @@
 import os
 
-def removePage(page_name, path):
+def removePage(page_name, path, indent):
 	consent = input(page_name + " will be removed, do you want to proceed? [Y] / [n]")
 	if consent == "Y":
 		#remove hbs
@@ -19,7 +19,7 @@ def removePage(page_name, path):
 		#remove routes
 
 		import_string = 'import '+page_name.capitalize()+' from \'./pages/'+page_name+'\';\n';
-		object_string = '\t{ path: \'/'+page_name+'\', view: '+page_name.capitalize()+' },\n';
+		object_string = indent + '{ path: \'/'+page_name+'\', view: '+page_name.capitalize()+' },\n';
 
 		f = open(path+"/src/routes.js", 'r')
 		lines = f.readlines()
@@ -43,7 +43,7 @@ def removePage(page_name, path):
 
 
 
-def createPage(page_name, path):
+def createPage(page_name, path, indent):
 	#create hbs
 	try:
 		f = open(path+"/src/templates/"+page_name+".hbs","x")
@@ -58,7 +58,7 @@ def createPage(page_name, path):
 	try:
 		f = open(path+"/src/pages/"+page_name+".js","x")
 		f = open(path+"/src/pages/"+page_name+".js","w+")
-		f.write('import App from \'../lib/App\';\n\nconst ' + page_name + 'Template = require(\'../templates/'+page_name+'.hbs\');\n\nexport default () => {\n\tconst title = \''+page_name+' automatic\';\n\n\tApp.render('+page_name+'Template({ title }));\n\tApp.router.navigate(\'/'+page_name+'\');\n};\n')
+		f.write('import App from \'../lib/App\';\n\nconst ' + page_name + 'Template = require(\'../templates/'+page_name+'.hbs\');\n\nexport default () => {\n' + indent + 'const title = \''+page_name+' automatic\';\n\n' + indent + 'App.render('+page_name+'Template({ title }));\n' + indent + 'App.router.navigate(\'/'+page_name+'\');\n};\n')
 		f.close();
 	except:
 		print("JS file already exists! Updating other files")
@@ -73,9 +73,9 @@ def createPage(page_name, path):
 			insert_indexes.append(index)
 			
 		if lines[index] == '];\n':
-			insert_indexes.append(index-1)
+			insert_indexes.append(index)
 	import_string = 'import '+page_name.capitalize()+' from \'./pages/'+page_name+'\';\n';
-	object_string = '\t{ path: \'/'+page_name+'\', view: '+page_name.capitalize()+' },\n';
+	object_string = indent + '{ path: \'/'+page_name+'\', view: '+page_name.capitalize()+' },\n';
 
 	if import_string in lines:
 		if object_string in lines:
@@ -98,6 +98,13 @@ def createPage(page_name, path):
 
 	f.close();
 
+indent_choice = input("What's your indentation type? 4 spaces type [4], 2 spaces type [2], tab type [tab]")
+
+indent = "\t"
+if indent_choice == "4":
+	indent = "    "
+elif indent_choice == "2":
+	indent = "  "
 option = input("Would you like to ADD or REMOVE a page? [a]/[r]")
 path = input("Path to your root app folder (ex: './mobdev/werkstuk) If you're currently in the root, press ENTER ")
 if path == "":
@@ -116,8 +123,8 @@ for page in pages:
 			print(page + " is not a valid page name, don't use spaces or underscores")
 		else:
 			print(' /$$                                             /$$          \n| $$                                            |__/          \n| $$  /$$$$$$   /$$$$$$  /$$$$$$/$$$$   /$$$$$$  /$$  /$$$$$$ \n| $$ /$$__  $$ /$$__  $$| $$_  $$_  $$ /$$__  $$| $$ |____  $$\n| $$| $$  \ $$| $$$$$$$$| $$ \ $$ \ $$| $$  \ $$| $$  /$$$$$$$\n| $$| $$  | $$| $$_____/| $$ | $$ | $$| $$  | $$| $$ /$$__  $$\n| $$|  $$$$$$/|  $$$$$$$| $$ | $$ | $$| $$$$$$$/| $$|  $$$$$$$\n|__/ \______/  \_______/|__/ |__/ |__/| $$____/ |__/ \_______/\n                                      | $$                    \n                                      | $$                    \n                                      |__/ ')
-			createPage(page, path)
+			createPage(page, path, indent)
 	elif option == "R" or option == "r":
 		print(' /$$                                             /$$          \n| $$                                            |__/          \n| $$  /$$$$$$   /$$$$$$  /$$$$$$/$$$$   /$$$$$$  /$$  /$$$$$$ \n| $$ /$$__  $$ /$$__  $$| $$_  $$_  $$ /$$__  $$| $$ |____  $$\n| $$| $$  \ $$| $$$$$$$$| $$ \ $$ \ $$| $$  \ $$| $$  /$$$$$$$\n| $$| $$  | $$| $$_____/| $$ | $$ | $$| $$  | $$| $$ /$$__  $$\n| $$|  $$$$$$/|  $$$$$$$| $$ | $$ | $$| $$$$$$$/| $$|  $$$$$$$\n|__/ \______/  \_______/|__/ |__/ |__/| $$____/ |__/ \_______/\n                                      | $$                    \n                                      | $$                    \n                                      |__/ ')
-		removePage(page, path)
+		removePage(page, path, indent)
 	

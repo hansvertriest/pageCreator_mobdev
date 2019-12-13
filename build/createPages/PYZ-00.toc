@@ -1,49 +1,5 @@
 ('D:\\Projects\\Python\\automation\\pageCreator_mobdevWerkstuk\\build\\createPages\\PYZ-00.pyz',
- [('_py_abc',
-   'c:\\users\\hans '
-   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\_py_abc.py',
-   'PYMODULE'),
-  ('tokenize',
-   'c:\\users\\hans '
-   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\tokenize.py',
-   'PYMODULE'),
-  ('argparse',
-   'c:\\users\\hans '
-   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\argparse.py',
-   'PYMODULE'),
-  ('textwrap',
-   'c:\\users\\hans '
-   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\textwrap.py',
-   'PYMODULE'),
-  ('copy',
-   'c:\\users\\hans '
-   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\copy.py',
-   'PYMODULE'),
-  ('gettext',
-   'c:\\users\\hans '
-   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\gettext.py',
-   'PYMODULE'),
-  ('struct',
-   'c:\\users\\hans '
-   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\struct.py',
-   'PYMODULE'),
-  ('token',
-   'c:\\users\\hans '
-   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\token.py',
-   'PYMODULE'),
-  ('tracemalloc',
-   'c:\\users\\hans '
-   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\tracemalloc.py',
-   'PYMODULE'),
-  ('pickle',
-   'c:\\users\\hans '
-   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\pickle.py',
-   'PYMODULE'),
-  ('pprint',
-   'c:\\users\\hans '
-   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\pprint.py',
-   'PYMODULE'),
-  ('_strptime',
+ [('_strptime',
    'c:\\users\\hans '
    'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\_strptime.py',
    'PYMODULE'),
@@ -55,6 +11,26 @@
    'c:\\users\\hans '
    'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\calendar.py',
    'PYMODULE'),
+  ('argparse',
+   'c:\\users\\hans '
+   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\argparse.py',
+   'PYMODULE'),
+  ('textwrap',
+   'c:\\users\\hans '
+   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\textwrap.py',
+   'PYMODULE'),
+  ('gettext',
+   'c:\\users\\hans '
+   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\gettext.py',
+   'PYMODULE'),
+  ('struct',
+   'c:\\users\\hans '
+   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\struct.py',
+   'PYMODULE'),
+  ('copy',
+   'c:\\users\\hans '
+   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\copy.py',
+   'PYMODULE'),
   ('doctest',
    'c:\\users\\hans '
    'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\doctest.py',
@@ -62,6 +38,22 @@
   ('unittest',
    'c:\\users\\hans '
    'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\unittest\\__init__.py',
+   'PYMODULE'),
+  ('ntpath',
+   'c:\\users\\hans '
+   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\ntpath.py',
+   'PYMODULE'),
+  ('string',
+   'c:\\users\\hans '
+   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\string.py',
+   'PYMODULE'),
+  ('genericpath',
+   'c:\\users\\hans '
+   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\genericpath.py',
+   'PYMODULE'),
+  ('stat',
+   'c:\\users\\hans '
+   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\stat.py',
    'PYMODULE'),
   ('unittest.signals',
    'c:\\users\\hans '
@@ -83,6 +75,14 @@
    'c:\\users\\hans '
    'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\unittest\\loader.py',
    'PYMODULE'),
+  ('fnmatch',
+   'c:\\users\\hans '
+   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\fnmatch.py',
+   'PYMODULE'),
+  ('posixpath',
+   'c:\\users\\hans '
+   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\posixpath.py',
+   'PYMODULE'),
   ('unittest.suite',
    'c:\\users\\hans '
    'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\unittest\\suite.py',
@@ -95,9 +95,21 @@
    'c:\\users\\hans '
    'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\contextlib.py',
    'PYMODULE'),
+  ('pprint',
+   'c:\\users\\hans '
+   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\pprint.py',
+   'PYMODULE'),
   ('logging',
    'c:\\users\\hans '
    'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\logging\\__init__.py',
+   'PYMODULE'),
+  ('pickle',
+   'c:\\users\\hans '
+   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\pickle.py',
+   'PYMODULE'),
+  ('_compat_pickle',
+   'c:\\users\\hans '
+   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\_compat_pickle.py',
    'PYMODULE'),
   ('threading',
    'c:\\users\\hans '
@@ -106,10 +118,6 @@
   ('_threading_local',
    'c:\\users\\hans '
    'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\_threading_local.py',
-   'PYMODULE'),
-  ('string',
-   'c:\\users\\hans '
-   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\string.py',
    'PYMODULE'),
   ('unittest.result',
    'c:\\users\\hans '
@@ -174,10 +182,6 @@
   ('bz2',
    'c:\\users\\hans '
    'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\bz2.py',
-   'PYMODULE'),
-  ('stat',
-   'c:\\users\\hans '
-   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\stat.py',
    'PYMODULE'),
   ('email.message',
    'c:\\users\\hans '
@@ -303,14 +307,6 @@
    'c:\\users\\hans '
    'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\socketserver.py',
    'PYMODULE'),
-  ('posixpath',
-   'c:\\users\\hans '
-   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\posixpath.py',
-   'PYMODULE'),
-  ('genericpath',
-   'c:\\users\\hans '
-   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\genericpath.py',
-   'PYMODULE'),
   ('mimetypes',
    'c:\\users\\hans '
    'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\mimetypes.py',
@@ -354,6 +350,14 @@
   ('urllib.parse',
    'c:\\users\\hans '
    'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\urllib\\parse.py',
+   'PYMODULE'),
+  ('tokenize',
+   'c:\\users\\hans '
+   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\tokenize.py',
+   'PYMODULE'),
+  ('token',
+   'c:\\users\\hans '
+   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\token.py',
    'PYMODULE'),
   ('platform',
    'c:\\users\\hans '
@@ -511,25 +515,21 @@
    'c:\\users\\hans '
    'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\__future__.py',
    'PYMODULE'),
-  ('_compat_pickle',
+  ('tracemalloc',
    'c:\\users\\hans '
-   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\_compat_pickle.py',
-   'PYMODULE'),
-  ('ntpath',
-   'c:\\users\\hans '
-   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\ntpath.py',
-   'PYMODULE'),
-  ('fnmatch',
-   'c:\\users\\hans '
-   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\fnmatch.py',
-   'PYMODULE'),
-  ('typing',
-   'c:\\users\\hans '
-   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\typing.py',
+   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\tracemalloc.py',
    'PYMODULE'),
   ('stringprep',
    'c:\\users\\hans '
    'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\stringprep.py',
+   'PYMODULE'),
+  ('_py_abc',
+   'c:\\users\\hans '
+   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\_py_abc.py',
+   'PYMODULE'),
+  ('typing',
+   'c:\\users\\hans '
+   'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\typing.py',
    'PYMODULE'),
   ('os',
    'c:\\users\\hans '

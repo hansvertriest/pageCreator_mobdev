@@ -35,13 +35,13 @@
   ('createPages',
    'D:\\Projects\\Python\\automation\\pageCreator_mobdevWerkstuk\\createPages.py',
    'PYSOURCE'),
-  ('VCRUNTIME140.dll',
-   'c:\\users\\hans '
-   'vertriest\\appdata\\local\\programs\\python\\python37\\VCRUNTIME140.dll',
-   'BINARY'),
   ('python37.dll',
    'c:\\users\\hans '
    'vertriest\\appdata\\local\\programs\\python\\python37\\python37.dll',
+   'BINARY'),
+  ('VCRUNTIME140.dll',
+   'c:\\users\\hans '
+   'vertriest\\appdata\\local\\programs\\python\\python37\\VCRUNTIME140.dll',
    'BINARY'),
   ('_socket',
    'c:\\users\\hans '
@@ -93,7 +93,7 @@
  [],
  False,
  False,
- 1576277597,
+ 1576279574,
  [('run.exe',
    'c:\\users\\hans '
    'vertriest\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit\\run.exe',
